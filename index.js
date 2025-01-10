@@ -24,6 +24,10 @@
 
     if (formEl.checkValidity()) { 
         thankyou()
+        document.getElementById('name').value = ''
+        document.getElementById('card-number').value = ''
+        document.getElementById('cvv').value = ''
+        
     } else {
         formEl.reportValidity()
     }
