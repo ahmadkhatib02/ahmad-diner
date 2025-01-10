@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <!-- Stylesheet -->
+       <link rel="stylesheet" href="index.css">
+       <!-- Icon -->
+       <link rel="icon" href="images/icon.png">
+       <!-- CSS Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      
+        <title>Ahmad's Diner</title>
+    </head>
+    <body>   
+        <main class="flex">
+            <div class="container">
+                <section class="header">
+                    <h1>Ahmad's Diner</h1>
+                    <h2>The best burgers and pizzas in town.</h2>
+                </section>
+        
+                <section id="menu">
+                    <!-- menu items go here -->
+                </section>
+        
+                <section id="checkout-page" class="checkout-page hidden">
+                    <h1 class="order-title">Your Order </h1>
+                    <div id="order-page">
+                        <!-- order items here -->
+                    </div>
+                    <div class="divider"></div>
+                    <div class="total-price">
+                        <h1 class= "price-header">Total price: </h1>
+                        <p id="total-price-nb">
+                            <!-- total number here -->
+                        </p>
+                    </div>
+                    <button id="complete-order" class="complete-order">Complete Order</button>
+                </section>
+
+                <section id="form-container" class="form-container hidden">
+                    <div id="close-btn" class="close-btn">X</div>
+                    <p class="form-header">Enter Card Details</p>
+                    <form id="form" class="">
+                        <input name= "name" type="text" id="name" placeholder="Enter your name" required>
+                        <input type="number" id="card-number" placeholder="Enter card number" required>
+                        <input type="number" id="cvv" placeholder="Enter CVV" required>
+                        <button id="submit" type="submit" class="submit">Pay</button>
+                    </form>
+                </section>
+                
+            </div>
+        </main>
+           
+	<script src="index.js" type="module"></script>
+    </body>
+</html> 
+
